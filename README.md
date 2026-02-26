@@ -12,7 +12,7 @@ Lenguaje: Python 3.13.6
 Librerías: Playwright & Pytest
 
 # Instalación y Uso
-Clonar el proyecto: git clone https://github.com/LauraLeon/qa-chattigo-automation.git
+Clonar el proyecto: git clone https://github.com/lleon-autoqa-automation-bot-chattigo.git
 
 Configurar el entorno e instalar dependencias: python -m venv .venv-1
 
