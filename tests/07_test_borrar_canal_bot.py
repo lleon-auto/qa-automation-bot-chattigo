@@ -16,4 +16,4 @@ def test_borrar_canal_bot(page: Page):
 
     page.get_by_role("button", name= "Salir").click()
 
-    expect.page.get_by_text('Se ha desasociado').to_be_visible()
+    expect(page.get_by_text('Se ha desasociado')).to_be_visible()

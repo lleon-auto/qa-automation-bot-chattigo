@@ -15,4 +15,4 @@ def test_filtrar_por_tipo(page: Page):
 
     page.get_by_role('button',name= 'Aplicar filtros' ).click()
 
-    expect.page.get_by_text('Filtros aplicados con éxito').to_be_visible()
+    expect(page.get_by_text('Filtros aplicados con éxito')).to_be_visible()

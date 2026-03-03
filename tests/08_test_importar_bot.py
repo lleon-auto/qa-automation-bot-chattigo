@@ -12,4 +12,4 @@ def test_importar_bot_chattigo(page: Page):
     file_chooser = fc_info.value
     file_chooser.set_files('bot-automation-flujos Copia(GENERAL).json')
 
-    expect.page.get_by_text('El proyecto se importó con éxito').to_be_visible()
+    expect(page.get_by_text('El proyecto se importó con éxito')).to_be_visible()
