@@ -4,7 +4,8 @@ def test_filtrar_por_tipo(page: Page):
 
     page.locator('.b-filters__icon').click()
     page.get_by_role('button', name= 'Seleccionar...' ).nth(1).click()
-    page.locator('.bot-dropdown-selector__items').get_by_text('Activos', exact=False)
+    #page.locator('.bot-dropdown-selector__items').get_by_text('Activos', exact=False)
+    page.locator('label').filter(has_text= 'ChattiGPT').click()
 
     page.get_by_role('button',name= 'Aplicar filtros' ).click()
 
