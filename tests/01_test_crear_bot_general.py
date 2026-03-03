@@ -4,7 +4,7 @@ def test_crear_bot_general(page: Page):
 
     #Crear bot
     page.get_by_role("button", name="Crear Bot").click()
-    page.get_by_role("textbox", name="Escriba el nombre del bot aquí").fill("QA Test Laura")
+    page.get_by_role("textbox", name="Escriba el nombre del bot aquí").fill("QA Auto-General Laura")
     page.get_by_role("button", name="Seleccionar").click()
     page.get_by_role("button", name="General").click()
     page.get_by_role("button", name="Siguiente").click()

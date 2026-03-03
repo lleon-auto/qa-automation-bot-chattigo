@@ -4,7 +4,7 @@ def test_crear_bot_gpt(page: Page):
 
     #Crear bot
     page.get_by_role("button", name="Crear Bot").click()
-    page.get_by_role("textbox", name="Escriba el nombre del bot aquí").fill("QA auto GPT-Laura")
+    page.get_by_role("textbox", name="Escriba el nombre del bot aquí").fill("QA auto-GPT Laura")
     page.get_by_role("button", name="Seleccionar").click()
     page.get_by_role("button", name="ChattiGPT").click()
     page.get_by_role("textbox", name="Ejemplo: Usted es un experto [rol o profesión que asumirá GPT]. Crea [tema o tarea]. El objetivo es [contexto]. El contenido es para [a quién dirige la respuesta]. Tus directrices para escribir son [restricciones]").fill("Eres un chatbot especializado en atención al cliente para Chattigo")
